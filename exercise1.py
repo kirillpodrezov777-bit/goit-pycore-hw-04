@@ -1,5 +1,5 @@
 path = 'Data1.txt'
-def totalsalary(path):
+def total_salary(path):
     try:
         with open(path, 'r', encoding='utf-8') as file:
             total_salary = 0
@@ -16,4 +16,4 @@ def totalsalary(path):
         return "Invalid data format in file."
     except ZeroDivisionError:
         return "Division by 0"
-print(totalsalary(path))
+print(total_salary(path))

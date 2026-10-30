@@ -55,11 +55,11 @@ def main():
             break
         elif command == "hello":
             print("How can I help you?")
-        elif command == "add username phone":
+        elif command == "add":
             print(add_contact(args, contacts))
-        elif command == "change username phone":
+        elif command == "change":
             print(change_contact(args, contacts))
-        elif command == "phone username":
+        elif command == "phone":
             print(show_phone(args, contacts))
         elif command == "all":
             print(show_all(contacts))

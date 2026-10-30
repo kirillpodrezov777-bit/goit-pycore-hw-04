@@ -15,6 +15,7 @@ def get_cats_info(path):
                 except ValueError:
                     print("incorrect age")
                     cat_info['age'] = ''
+                cat_info['age'] = str(age)
                 cats_info.append(cat_info)
             return cats_info
     except FileNotFoundError:
